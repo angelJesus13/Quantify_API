@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 
-// Cargar variables de entorno
-dotenv.config();
+// Conectar a la BD
+connectDB();
 
 const app = express();
 
@@ -16,7 +16,6 @@ app.get("/api/health", (req, res) => {
     res.json({ ok: true, message: "API Quantify funcionando 🚀" });
 });
 
-// Puerto desde .env o 3000 por defecto
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
