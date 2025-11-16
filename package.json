@@ -1,0 +1,32 @@
+{
+  "name": "quantify_api",
+  "version": "1.0.0",
+  "description": "\"# Notas backend Quantify\" >> DOC_BACKEND.md",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelJesus13/Quantify_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/angelJesus13/Quantify_API/issues"
+  },
+  "homepage": "https://github.com/angelJesus13/Quantify_API#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
