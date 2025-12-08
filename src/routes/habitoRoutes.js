@@ -1,0 +1,10 @@
+const express = require('express');
+const { crearHabito, obtenerHabitos, actualizarHabito, eliminarHabito } = require('../controllers/habitoController');
+const auth = require('../middlewares/authMiddleware');
+const router = express.Router();
+router.use(auth);
+router.post('/', crearHabito);
+router.get('/', obtenerHabitos);
+router.put('/:id', actualizarHabito);
+router.delete('/:id', eliminarHabito);
+module.exports = router;
